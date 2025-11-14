@@ -5,3 +5,10 @@
 2025-11-14T10:01:44.015668+00:00 | subscriptions | replaced | rows=1200 | source=subscriptions.csv
 2025-11-14T10:01:44.112013+00:00 | usage_logs | replaced | rows=20000 | source=usage_logs.csv
 2025-11-14T10:01:44.113150+00:00 | ingestion completed successfully
+2025-11-14T10:52:17.116541+00:00 | ingestion started | db=ecommerce.db
+2025-11-14T10:52:17.145863+00:00 | customers | replaced | rows=1000 | source=customers.csv
+2025-11-14T10:52:17.149181+00:00 | plans | replaced | rows=3 | source=plans.csv
+2025-11-14T10:52:17.153533+00:00 | content | replaced | rows=300 | source=content.csv
+2025-11-14T10:52:17.160327+00:00 | subscriptions | replaced | rows=1200 | source=subscriptions.csv
+2025-11-14T10:52:17.259751+00:00 | usage_logs | replaced | rows=20000 | source=usage_logs.csv
+2025-11-14T10:52:17.260919+00:00 | ingestion completed successfully

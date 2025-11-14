@@ -28,3 +28,18 @@
 2025-11-14T10:06:34.252918+00:00 | subscriptions | valid=1200 | invalid=0
 2025-11-14T10:06:34.252938+00:00 | usage_logs | valid=20000 | invalid=0
 2025-11-14T10:06:34.255025+00:00 | validation run completed
+2025-11-14T10:52:16.780017+00:00 | validation run started
+2025-11-14T10:52:16.782857+00:00 | customers | schema validation complete | valid=1000 | invalid=0
+2025-11-14T10:52:16.783309+00:00 | plans | schema validation complete | valid=3 | invalid=0
+2025-11-14T10:52:16.784204+00:00 | content | schema validation complete | valid=300 | invalid=0
+2025-11-14T10:52:16.787160+00:00 | subscriptions | schema validation complete | valid=1200 | invalid=0
+2025-11-14T10:52:16.787312+00:00 | subscriptions | logical validation complete | valid=1200 | invalid=0
+2025-11-14T10:52:16.859712+00:00 | usage_logs | schema validation complete | valid=20000 | invalid=0
+2025-11-14T10:52:16.863283+00:00 | usage_logs | referential/logical validation complete | valid=20000 | invalid=0
+2025-11-14T10:52:16.863473+00:00 | validation summary
+2025-11-14T10:52:16.863559+00:00 | customers | valid=1000 | invalid=0
+2025-11-14T10:52:16.863591+00:00 | plans | valid=3 | invalid=0
+2025-11-14T10:52:16.863614+00:00 | content | valid=300 | invalid=0
+2025-11-14T10:52:16.863706+00:00 | subscriptions | valid=1200 | invalid=0
+2025-11-14T10:52:16.863899+00:00 | usage_logs | valid=20000 | invalid=0
+2025-11-14T10:52:16.866419+00:00 | validation run completed

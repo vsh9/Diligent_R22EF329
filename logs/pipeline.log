@@ -1,0 +1,15 @@
+2025-11-14T16:22:14+05:30 | INFO | ===============================================
+2025-11-14T16:22:14+05:30 | INFO | Starting Agentic SDLC pipeline run
+2025-11-14T16:22:14+05:30 | INFO | Running implementation/data_generation/generate_customers.py
+2025-11-14T16:22:15+05:30 | INFO | Running implementation/data_generation/generate_plans.py
+2025-11-14T16:22:15+05:30 | INFO | Running implementation/data_generation/generate_content.py
+2025-11-14T16:22:15+05:30 | INFO | Running implementation/data_generation/generate_subscriptions.py
+2025-11-14T16:22:15+05:30 | INFO | Running implementation/data_generation/generate_usage_logs.py
+2025-11-14T16:22:16+05:30 | INFO | Phase 1 complete: All datasets generated in data/raw/
+2025-11-14T16:22:16+05:30 | INFO | Validating generated data
+2025-11-14T16:22:16+05:30 | INFO | Phase 2 complete: Data validation passed
+2025-11-14T16:22:16+05:30 | INFO | Ingesting data into SQLite
+2025-11-14T16:22:17+05:30 | INFO | Phase 3 complete: Database ecommerce.db created/updated
+2025-11-14T16:22:17+05:30 | INFO | Running analytics views and exports
+2025-11-14T16:22:17+05:30 | INFO | Phase 4 complete: Analytics reports exported
+2025-11-14T16:22:17+05:30 | INFO | Pipeline completed successfully
