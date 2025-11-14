@@ -1,0 +1,30 @@
+2025-11-14T10:05:56.066756 | validation run started
+2025-11-14T10:05:56.070268 | customers | schema validation complete | valid=1000 | invalid=0
+2025-11-14T10:05:56.070720 | plans | schema validation complete | valid=3 | invalid=0
+2025-11-14T10:05:56.071632 | content | schema validation complete | valid=300 | invalid=0
+2025-11-14T10:05:56.074821 | subscriptions | schema validation complete | valid=1200 | invalid=0
+2025-11-14T10:05:56.075069 | subscriptions | logical validation complete | valid=1200 | invalid=0
+2025-11-14T10:05:56.127019 | usage_logs | schema validation complete | valid=20000 | invalid=0
+2025-11-14T10:05:56.133288 | usage_logs | referential/logical validation complete | valid=20000 | invalid=0
+2025-11-14T10:05:56.133549 | validation summary
+2025-11-14T10:05:56.133622 | customers | valid=1000 | invalid=0
+2025-11-14T10:05:56.133662 | plans | valid=3 | invalid=0
+2025-11-14T10:05:56.133686 | content | valid=300 | invalid=0
+2025-11-14T10:05:56.133711 | subscriptions | valid=1200 | invalid=0
+2025-11-14T10:05:56.133731 | usage_logs | valid=20000 | invalid=0
+2025-11-14T10:05:56.135793 | validation run completed
+2025-11-14T10:06:34.187026+00:00 | validation run started
+2025-11-14T10:06:34.189711+00:00 | customers | schema validation complete | valid=1000 | invalid=0
+2025-11-14T10:06:34.190098+00:00 | plans | schema validation complete | valid=3 | invalid=0
+2025-11-14T10:06:34.190903+00:00 | content | schema validation complete | valid=300 | invalid=0
+2025-11-14T10:06:34.193953+00:00 | subscriptions | schema validation complete | valid=1200 | invalid=0
+2025-11-14T10:06:34.194178+00:00 | subscriptions | logical validation complete | valid=1200 | invalid=0
+2025-11-14T10:06:34.248276+00:00 | usage_logs | schema validation complete | valid=20000 | invalid=0
+2025-11-14T10:06:34.252485+00:00 | usage_logs | referential/logical validation complete | valid=20000 | invalid=0
+2025-11-14T10:06:34.252762+00:00 | validation summary
+2025-11-14T10:06:34.252846+00:00 | customers | valid=1000 | invalid=0
+2025-11-14T10:06:34.252873+00:00 | plans | valid=3 | invalid=0
+2025-11-14T10:06:34.252896+00:00 | content | valid=300 | invalid=0
+2025-11-14T10:06:34.252918+00:00 | subscriptions | valid=1200 | invalid=0
+2025-11-14T10:06:34.252938+00:00 | usage_logs | valid=20000 | invalid=0
+2025-11-14T10:06:34.255025+00:00 | validation run completed
