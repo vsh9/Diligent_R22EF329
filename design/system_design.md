@@ -50,3 +50,19 @@ This order satisfies foreign-key dependencies and ensures each behavioral rule h
 ### Future Integration
 - Ingestion layer reads these CSVs, loads staging tables in SQLite, and triggers validation tests recorded in `implementation/validation`.
 - Analytics layer will leverage the generated data to compute top content and engagement metrics, while governance checks ensure the behaviors defined here remain intact over time.
+
+## Analytics Execution Layer
+
+The analytics phase materializes SQL views inside `ecommerce.db` and exports curated reports for downstream stakeholders.
+
+- **View Compilation Flow**  
+  - `implementation/analytics/run_analytics.py` reads the canonical SQL definitions stored in `implementation/analytics/views/*.sql`.  
+  - For each view (`top_content_view`, `engagement_view`) the script drops any existing version, executes the SQL text verbatim, and re-creates the view inside SQLite to guarantee parity with version-controlled definitions.
+
+- **Database Interaction**  
+  - The script connects to `ecommerce.db` with foreign keys enforced, ensuring views can join against the latest ingested tables (`usage_logs`, `content`, `customers`).  
+  - After compilation, it immediately queries each view to verify row counts, log execution metadata, and capture preview samples.
+
+- **Outputs & Schemas**  
+  - Query results are exported to `data/processed/top_content_report.csv` (columns: `content_id`, `title`, `genre`, `total_watch_hours`, `unique_viewers`, `avg_completion_rate`) and `data/processed/engagement_report.csv` (columns: `customer_id`, `name`, `avg_watch_minutes_per_session`, `avg_completion_rate`, `total_sessions`).  
+  - Execution activity, including timestamps, SQL file sources, and row counts, is recorded in `logs/analytics.log` for auditability.
