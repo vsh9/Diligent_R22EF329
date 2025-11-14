@@ -31,6 +31,7 @@ class TestIngestion(TestCase):
     def test_table_creation(self):
         """Test tables are created with correct schema."""
         conn = sqlite3.connect(str(self.db_path))
+        conn.execute("PRAGMA foreign_keys = ON")
         create_tables(conn)
         conn.commit()
 
